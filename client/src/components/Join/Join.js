@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import React, { useState } from 'react'; import { Link } from "react-router-dom";
 
 import './Join.css';
 
@@ -20,7 +19,7 @@ export default function SignIn() {
         <Link onClick={e => (!name || !room) ? e.preventDefault() : null} to={`/chat?name=${name}&room=${room}`}>
           <button className={'button mt-20'} type="submit">Sign In</button>
         </Link>
-         <Link onClick={event =>  window.location.href='http://www.hackclubkmea.tech/'}>
+         <Link onClick={event =>  window.location.href='https://www.hackclubkmea.tech/'}>
           <button className={'button mt-20'} type="submit">Back To Home</button>
         </Link>
       </div>
